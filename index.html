@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hemanth Kumar | Full-Stack & AI Developer</title>
+  <meta name="description" content="Portfolio of Hemanth Kumar - Full-Stack (MERN) and AI/GenAI Developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">H<span>.</span>K</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <nav class="links" id="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="btn-mini">Hire Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello reveal">👋 Hey, I'm</p>
+        <h1 class="reveal">Hemanth <span class="grad">Kumar</span></h1>
+        <h2 class="reveal"><span id="typing"></span><span class="caret">|</span></h2>
+        <p class="lead reveal">
+          I build fast full-stack web apps and intelligent AI products, from multi-agent
+          planners to voice assistants. Turning ideas into clean, working software.
+        </p>
+        <div class="cta reveal">
+          <a href="#projects" class="btn primary">View My Work</a>
+          <a href="assets/resume.pdf" class="btn ghost" download>Download Resume</a>
+        </div>
+        <div class="socials reveal">
+          <a href="https://github.com/hemanth26-web" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://huggingface.co/Hemanth26Kumar" target="_blank" rel="noopener">Hugging Face</a>
+          <a href="mailto:sonnailahemanth@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="scroll-hint">Scroll ↓</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="title reveal"><span class="grad">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="glass tilt reveal">
+          <p>
+            I'm a B.Tech Computer Science student (2024–2028) at Chaitanya Deemed to be
+            University, Hyderabad. My base is the <b>MERN stack</b>, and I've been going
+            deep into <b>Generative AI</b>: LLM apps, agents, and voice interfaces.
+          </p>
+          <p>
+            I like building things that actually work end to end: clean UI, solid APIs,
+            and AI that does something useful. Currently doing a GenAI internship and
+            building my portfolio as a full-stack + AI developer.
+          </p>
+        </div>
+        <div class="stats">
+          <div class="glass stat tilt reveal"><h3 data-target="3">0</h3><p>AI Projects</p></div>
+          <div class="glass stat tilt reveal"><h3 data-target="1">0</h3><p>Client Project</p></div>
+          <div class="glass stat tilt reveal"><h3 data-target="1">0</h3><p>GenAI Internship</p></div>
+          <div class="glass stat tilt reveal"><h3 data-target="2028">0</h3><p>B.Tech Graduate</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="title reveal"><span class="grad">02.</span> Skills & Tech</h2>
+      <div class="skills-grid">
+        <div class="glass tilt reveal">
+          <h3 class="c1">Frontend</h3>
+          <div class="chips"><span>React</span><span>Vite</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Tailwind</span><span>Three.js</span></div>
+        </div>
+        <div class="glass tilt reveal">
+          <h3 class="c2">Backend</h3>
+          <div class="chips"><span>Node.js</span><span>Express</span><span>FastAPI</span><span>REST APIs</span><span>Python</span></div>
+        </div>
+        <div class="glass tilt reveal">
+          <h3 class="c3">AI / GenAI</h3>
+          <div class="chips"><span>LangGraph</span><span>LLM APIs</span><span>Groq</span><span>Multi-Agent Systems</span><span>Prompt Engineering</span><span>Hugging Face</span></div>
+        </div>
+        <div class="glass tilt reveal">
+          <h3 class="c4">Database & Tools</h3>
+          <div class="chips"><span>MongoDB</span><span>Git</span><span>GitHub</span><span>VS Code</span><span>PowerShell</span><span>Postman</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="title reveal"><span class="grad">03.</span> Featured Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project glass tilt reveal">
+          <div class="p-icon g1">🧭</div>
+          <h3>Waypoint: AI Travel Planner</h3>
+          <p>A multi-agent travel planner where specialised AI agents collaborate to build complete itineraries. FastAPI + LangGraph + Groq backend with a React/Vite frontend.</p>
+          <div class="chips small"><span>FastAPI</span><span>LangGraph</span><span>Groq</span><span>React</span></div>
+          <a href="https://github.com/hemanth26-web" target="_blank" rel="noopener" class="link">View on GitHub →</a>
+        </article>
+
+        <article class="project glass tilt reveal">
+          <div class="p-icon g2">🎙️</div>
+          <h3>Nova: Personal Voice Assistant</h3>
+          <p>An AI voice assistant that runs on Windows and Android. Talk to it, give commands, and let it handle everyday tasks hands-free.</p>
+          <div class="chips small"><span>Python</span><span>Voice AI</span><span>Android</span><span>Windows</span></div>
+          <a href="https://github.com/hemanth26-web" target="_blank" rel="noopener" class="link">View on GitHub →</a>
+        </article>
+
+        <article class="project glass tilt reveal">
+          <div class="p-icon g3">💊</div>
+          <h3>Rx Scan: Prescription Reader</h3>
+          <p>An AI-powered tool that reads medical prescriptions from images and turns messy handwriting into clear, structured information.</p>
+          <div class="chips small"><span>AI / OCR</span><span>Vision</span><span>Web App</span></div>
+          <a href="https://github.com/hemanth26-web" target="_blank" rel="noopener" class="link">View on GitHub →</a>
+        </article>
+
+        <article class="project glass tilt reveal">
+          <div class="p-icon g4">🏥</div>
+          <h3>Clinic Website (Client Work)</h3>
+          <p>A professional website built for a real clinic client: responsive design, clear service info, and easy patient contact.</p>
+          <div class="chips small"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span></div>
+          <a href="https://github.com/hemanth26-web" target="_blank" rel="noopener" class="link">View on GitHub →</a>
+        </article>
+
+        <article class="project glass tilt reveal">
+          <div class="p-icon g5">🛒</div>
+          <h3>Shopnex: MERN E-Commerce</h3>
+          <p>A full-stack e-commerce platform built on the MERN stack, with a React storefront, Express/Node REST APIs, and MongoDB for products, users, and orders.</p>
+          <div class="chips small"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div>
+          <a href="https://github.com/hemanth26-web" target="_blank" rel="noopener" class="link">View on GitHub →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="section">
+      <h2 class="title reveal"><span class="grad">04.</span> My Journey</h2>
+      <div class="timeline">
+        <div class="t-item glass tilt reveal">
+          <span class="date">2024 – 2028</span>
+          <h3>B.Tech in Computer Science</h3>
+          <p>Chaitanya Deemed to be University, Hyderabad. Building strong CS fundamentals alongside real projects.</p>
+        </div>
+        <div class="t-item glass tilt reveal">
+          <span class="date">2026</span>
+          <h3>GenAI Intern</h3>
+          <p>TuteDude / Guruvai Sciences. Hands-on work with LLMs, prompt design, and AI application building.</p>
+        </div>
+        <div class="t-item glass tilt reveal">
+          <span class="date">Now</span>
+          <h3>Full-Stack + AI Developer</h3>
+          <p>Shipping MERN and AI projects, building a portfolio, and looking for fresher opportunities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="title reveal"><span class="grad">05.</span> Let's Work Together</h2>
+      <div class="contact-grid">
+        <div class="glass tilt reveal">
+          <h3>Get in touch</h3>
+          <p>Got an opportunity, a project idea, or just want to say hi? My inbox is open.</p>
+          <p class="info">📧 sonnailahemanth@gmail.com</p>
+          <p class="info">📍 Hyderabad, Telangana, India</p>
+          <div class="socials">
+            <a href="https://github.com/hemanth26-web" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://huggingface.co/Hemanth26Kumar" target="_blank" rel="noopener">Hugging Face</a>
+          </div>
+        </div>
+                <form class="glass reveal" id="contactForm">
+          <input type="hidden" name="access_key" value="PASTE_YOUR_ACCESS_KEY_HERE" />
+          <input type="hidden" name="subject" value="New message from your portfolio" />
+          <input type="hidden" name="from_name" value="Portfolio Website" />
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <input type="text" name="name" id="fname" placeholder="Your Name" required />
+          <input type="email" name="email" id="femail" placeholder="Your Email" required />
+          <input type="text" name="company" id="fcompany" placeholder="Company / Organisation (optional)" />
+          <textarea name="message" id="fmsg" rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="btn primary" id="sendBtn">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed & built by <span class="grad">Hemanth Kumar</span> · © <span id="year"></span></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
